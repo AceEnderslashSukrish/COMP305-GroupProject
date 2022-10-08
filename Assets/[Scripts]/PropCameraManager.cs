@@ -25,7 +25,7 @@ public class PropCameraManager : MonoBehaviour
      */
     private void Start()
     {
-        virtualCam = GameObject.Find("Sign Cam");
+        virtualCam = transform.GetChild(0).gameObject;
         cm = gameObject.GetComponentInChildren<CinemachineVirtualCamera>();
         cm.Priority = camPriorityInactive;
         virtualCam.SetActive(false);
