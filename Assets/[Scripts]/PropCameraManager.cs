@@ -3,8 +3,8 @@ using Cinemachine;
 
 public class PropCameraManager : MonoBehaviour
 {
-    [SerializeField] private GameObject virtualCam;
-    [SerializeField] private CinemachineVirtualCamera cm;
+    private GameObject virtualCam;
+    private CinemachineVirtualCamera cm;
 
     [Header("Camera Priority When Active")]
     [Range(0, 25)]
